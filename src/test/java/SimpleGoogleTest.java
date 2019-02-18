@@ -18,19 +18,25 @@ public class SimpleGoogleTest {
     }
 
     @Test
-    public void googleTest(){
+    public void googleTest() {
         drv = new ChromeDriver(); //Driver init
         drv.get("https://www.seleniumhq.org/");
         drv.quit();
-
+    }
+    @Test
+    public void ieTest() {
         drv = new InternetExplorerDriver();
         drv.get("https://www.seleniumhq.org/");
         drv.quit();
-
+    }
+    @Test
+    public void firefoxTest() {
         drv = new FirefoxDriver();
         drv.get("https://www.seleniumhq.org/");
         drv.quit();
-
+    }
+    @Test
+    public void edgeTest(){
         drv = new EdgeDriver();
         drv.get("https://www.seleniumhq.org/");
     }
